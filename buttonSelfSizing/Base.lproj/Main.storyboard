@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="buttonSelfSizing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-6Q-63O">
+                                <rect key="frame" x="20" y="40" width="335" height="182.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcD-sz-84l">
+                                        <rect key="frame" x="20" y="20" width="295" height="142.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">Label:	1 one one one	2 two two two	3 three three three	4 four four four	5 five five five	6 six six six	7 seven seven seven	8 eight eight eight	9 nine nine nine	10 ten ten ten	11 eleven eleven eleven	12 twelve twelve twelve	13 thirteen thirteen thirteen</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.68694196429999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CcD-sz-84l" secondAttribute="trailing" constant="20" id="24d-vj-EOy"/>
+                                    <constraint firstItem="CcD-sz-84l" firstAttribute="leading" secondItem="xcP-6Q-63O" secondAttribute="leading" constant="20" id="4Oz-ua-8Ym"/>
+                                    <constraint firstAttribute="bottom" secondItem="CcD-sz-84l" secondAttribute="bottom" constant="20" id="Kk9-cK-5Sy"/>
+                                    <constraint firstItem="CcD-sz-84l" firstAttribute="top" secondItem="xcP-6Q-63O" secondAttribute="top" constant="20" id="syf-lb-ABt"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VH8-pY-qgi">
+                                <rect key="frame" x="20" y="242.5" width="335" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IEo-sY-36a">
+                                        <rect key="frame" x="20" y="20" width="295" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="fY4-vp-83n"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <string key="title">Fattie Buttton:	1 one one one	2 two two two	3 three three three	4 four four four	5 five five five	6 six six six	7 seven seven seven	8 eight eight eight	9 nine nine nine	10 ten ten ten	11 eleven eleven eleven	12 twelve twelve twelve	13 thirteen thirteen thirteen</string>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.68694196429999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IEo-sY-36a" firstAttribute="top" secondItem="VH8-pY-qgi" secondAttribute="top" constant="20" id="1Iw-kI-1XW"/>
+                                    <constraint firstItem="IEo-sY-36a" firstAttribute="leading" secondItem="VH8-pY-qgi" secondAttribute="leading" constant="20" id="Cn8-PY-0e0"/>
+                                    <constraint firstAttribute="bottom" secondItem="IEo-sY-36a" secondAttribute="bottom" constant="20" id="Pa9-6j-t7S"/>
+                                    <constraint firstAttribute="trailing" secondItem="IEo-sY-36a" secondAttribute="trailing" constant="20" id="eCz-8V-Md9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-r7-Rcg">
+                                <rect key="frame" x="20" y="332.5" width="335" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bd4-UZ-Lvw" customClass="AutoLayoutButton" customModule="buttonSelfSizing" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="295" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <string key="title">Cœur Buttton:	1 one one one	2 two two two	3 three three three	4 four four four	5 five five five	6 six six six	7 seven seven seven	8 eight eight eight	9 nine nine nine	10 ten ten ten	11 eleven eleven eleven	12 twelve twelve twelve	13 thirteen thirteen thirteen</string>
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.68694196429999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bd4-UZ-Lvw" secondAttribute="bottom" constant="20" id="GHe-6z-RQg"/>
+                                    <constraint firstItem="Bd4-UZ-Lvw" firstAttribute="leading" secondItem="0qs-r7-Rcg" secondAttribute="leading" constant="20" id="J5w-FT-yJw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bd4-UZ-Lvw" secondAttribute="trailing" constant="20" id="dAc-VW-lKe"/>
+                                    <constraint firstItem="Bd4-UZ-Lvw" firstAttribute="top" secondItem="0qs-r7-Rcg" secondAttribute="top" constant="20" id="sue-XT-Rlx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xcP-6Q-63O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3uq-1z-s7E"/>
+                            <constraint firstItem="VH8-pY-qgi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="54K-79-MwN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VH8-pY-qgi" secondAttribute="trailing" constant="20" id="8Cs-Fy-CRr"/>
+                            <constraint firstItem="0qs-r7-Rcg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FHT-o0-0FO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0qs-r7-Rcg" secondAttribute="trailing" constant="20" id="NyU-fG-MY8"/>
+                            <constraint firstItem="VH8-pY-qgi" firstAttribute="top" secondItem="xcP-6Q-63O" secondAttribute="bottom" constant="20" id="TPN-44-eIn"/>
+                            <constraint firstItem="0qs-r7-Rcg" firstAttribute="top" secondItem="VH8-pY-qgi" secondAttribute="bottom" constant="20" id="cB5-cb-fNK"/>
+                            <constraint firstItem="xcP-6Q-63O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nrG-GQ-iJq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xcP-6Q-63O" secondAttribute="trailing" constant="20" id="qfO-im-4g2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

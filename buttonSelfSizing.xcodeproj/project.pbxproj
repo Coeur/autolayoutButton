@@ -22,6 +22,7 @@
 		37CF1B4C20BD6AF700ECA99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CF1B4F20BD6AF700ECA99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37CF1B5120BD6AF700ECA99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CF1B5720BD747600ECA99D /* Screen Shot at runtime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot at runtime.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 				37CF1B4520BD6AF600ECA99D /* AppDelegate.swift */,
 				37CF1B4720BD6AF600ECA99D /* ViewController.swift */,
 				37CF1B4920BD6AF600ECA99D /* Main.storyboard */,
+				37CF1B5720BD747600ECA99D /* Screen Shot at runtime.png */,
 				37CF1B4C20BD6AF700ECA99D /* Assets.xcassets */,
 				37CF1B4E20BD6AF700ECA99D /* LaunchScreen.storyboard */,
 				37CF1B5120BD6AF700ECA99D /* Info.plist */,
@@ -289,7 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coeur.buttonSelfSizing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coeur.buttonSelfSizing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
